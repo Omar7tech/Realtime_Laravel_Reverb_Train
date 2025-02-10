@@ -1,3 +1,24 @@
+🚀 A real-time toggle switch built using **Laravel**, **Livewire**, **Alpine.js**, and **Laravel Reverb**. This project demonstrates real-time state synchronization across multiple clients using **WebSockets (Reverb)** and **Livewire's reactivity**.  
+
+## Features  
+✅ Real-time toggle state updates across multiple browsers  
+✅ **Livewire + Alpine.js** for dynamic UI updates  
+✅ **Laravel Reverb** for event-driven real-time communication  
+✅ **Cache persistence** to maintain toggle state  
+
+## Technologies Used  
+- **Laravel** (PHP framework)  
+- **Livewire** (Reactive components)  
+- **Alpine.js** (Lightweight frontend framework)  
+- **Laravel Reverb** (Native WebSockets for real-time updates)  
+- **Tailwind CSS** (Styling)  
+
+## How It Works  
+1. User toggles the switch.  
+2. Livewire updates the state and broadcasts an event (`SwitchFlipped`).  
+3. Other clients listening to the event **receive the update in real-time** via Laravel Reverb.  
+4. The toggle switch updates automatically without a page refresh.  
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
